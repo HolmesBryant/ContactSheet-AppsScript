@@ -33,8 +33,6 @@
 <output><h3>Please wait...</h3></output>
 
 <textarea hidden>
-# README #
-
 ## Overview ##
 
 This script receives contact data from an HTML form on your website and:
@@ -42,7 +40,7 @@ This script receives contact data from an HTML form on your website and:
 * Checks for the presence of an input named "mirage"
    - If it finds such an input, it assumes it is a bot trap and rejects the form submission.
 * Checks for the presence of an input named "phone"
-    - If it finds such an input, it formats the value to ` x(n) x(n) x(n) ...` so all phone numbers have consistent formatting. For example, "123 456 7890" or "+44 20 7946 0808".
+    - If it finds such an input, it tries to format the value to `x(n) x(n) x(n) ...` so all phone numbers have consistent formatting. For example, "123 456 7890" or "+44 20 7946 0808".
 * Uses the value of the email field and the firstName field to check if the person exists in your Google Contacts.
     - If the contact does not exist in Google Contacts AND the option (accessed from ContactSheet > Options) **Add Contact** is "Yes", it adds the contact to your Google Contacts.
 * Checks for the presence of an input named "mailingList".
